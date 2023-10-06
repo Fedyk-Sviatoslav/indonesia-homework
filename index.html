@@ -12,57 +12,61 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <div class="container">
       <header class="header">
-        <img
-          src="./images/logo-flower.png"
-          alt="logo flower"
-          class="header-image"
-        />
-        <h1 class="header-logo">Explore <br />Indonesia</h1>
-        <nav class="header-navigation">
+        <div class="container">
+        <div class="header-flexbox">
+          <img
+            src="./images/logo-flower.png"
+            alt="logo flower"
+            class="header-image"
+          />
+          <h1 class="header-logo">Explore <br />Indonesia</h1>
+          <nav class="header-navigation">
+            <ul class="header-list">
+              <li class="header-item">
+                <p class="header-text">destinations</p>
+              </li>
+              <li class="header-item">
+                <p class="header-text">experiences</p>
+              </li>
+              <li class="header-item">
+                <p class="header-text">about</p>
+              </li>
+              <li class="header-item">
+                <p class="header-text">gallery</p>
+              </li>
+            </ul>
+          </nav>
           <ul class="header-list">
             <li class="header-item">
-              <p class="header-text">destinations</p>
+              <a href="" class="header-link">
+                <img
+                  src="./images/search.png"
+                  alt="search button"
+                  class="header-search"
+                />
+              </a>
             </li>
             <li class="header-item">
-              <p class="header-text">experiences</p>
-            </li>
-            <li class="header-item">
-              <p class="header-text">about</p>
-            </li>
-            <li class="header-item">
-              <p class="header-text">gallery</p>
+              <a href="" class="header-link">
+                <img
+                  src="./images/menu.png"
+                  alt="menu button"
+                  class="header-menu"
+                />
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="" class="header-link">
-              <img
-                src="./images/search.png"
-                alt="search button"
-                class="header-search"
-              />
-            </a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">
-              <img
-                src="./images/menu.png"
-                alt="menu button"
-                class="header-menu"
-              />
-            </a>
-          </li>
-        </ul>
+        </div>
+      </div>
       </header>
-    </div>
     <main>
-      <div class="container">
         <section class="explore">
-          <h2 class="explore-title">explore<br/>indonesia</h2>
-          <button type="button" class="explore-button">Start travelling</button>
+          <div class="container">
+          <div class="explore-left">
+            <h2 class="explore-title">explore<br/>indonesia</h2>
+            <button type="button" class="explore-button">Start travelling</button>
+          </div>
           <div class="explore-flex">
             <ul class="explore-list">
               <li class="explore-item">
@@ -90,145 +94,152 @@
             />
           </div>
         </section>
-      </div>
-      <div class="container">
         <section class="about">
+          <div class="container">
           <ul class="about-list">
-            <li class="about-item">
-              <img
-                src="./images/path.png"
-                alt="paty in the mountains"
-                class="about-image"
-              />
-              <div class="about-texts">
-                <h2 class="about-title">The walkways of Indonesia spellbind</h2>
-                <p class="about-text">
-                  Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
-                  commodo magna et libero mollis rhoncus.
-                </p>
-                <button type="button" class="about-button">Learn More</button>
-              </div>
-            </li>
-            <li class="about-item">
-              <img src="./images/palm.png" alt="beach" class="about-image" />
-              <div class="about-texts">
-                <h2 class="about-title">
-                  Perfect beaches exude relaxation and fun
-                </h2>
-                <p class="about-text">
-                  Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
-                  commodo magna et libero mollis rhoncus.
-                </p>
-                <button type="button" class="about-button">Learn More</button>
-              </div>
-            </li>
+              <li class="about-item">
+                <img
+                  src="./images/path.png"
+                  alt="paty in the mountains"
+                  class="about-image"
+                />
+                <div class="about-walkways">
+                  <h2 class="about-title">The walkways of Indonesia spellbind</h2>
+                  <p class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adip <br> iscing elit. Fusce
+                    commodo magna et libero <br> mollis rhoncus.
+                  </p>
+                  <button type="button" class="about-button">Learn More</button>
+                </div>
+              </li>
+              <li class="about-item">
+                <img src="./images/palm.png" alt="beach" id="about-image" />
+              
+                  <div class="about-beaches">
+                  <h2 class="about-title">
+                    Perfect beaches exude relaxation and fun
+                  </h2>
+                  <p class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adip <br> iscing elit. Fusce
+                    commodo magna et libero <br> mollis rhoncus.
+                  </p>
+                  <button type="button" class="about-button">Learn More</button>
+                </div>
+              </li>
           </ul>
+          </div>
         </section>
-      </div>
-      <div class="container">
         <section class="secrets">
-          <button type="button" class="secrets-back"></button>
-          <ul class="secrets-list">
-            <li class="secrets-item">
-              <img src="./images/rock.jpg" alt="sea" class="secrets-image" />
-            </li>
-            <li class="secrets-item">
-              <img
-                src="./images/kids.jpg"
-                alt="kids playing"
-                class="secrets-image"
-              />
-            </li>
-            <li class="secrets-item">
-              <img src="./images/lakes.jpg" alt="lakes" class="secrets-image" />
-            </li>
-          </ul>
-          <button type="button" class="secrets-next"></button>
-          <ul class="secrets-list">
-            <li><button type="button" class="secrets-button"></button></li>
-            <li><button type="button" class="secrets-button"></button></li>
-            <li><button type="button" class="secrets-button"></button></li>
-            <li><button type="button" class="secrets-button"></button></li>
-            <li><button type="button" class="secrets-button"></button></li>
-            <li><button type="button" class="secrets-button"></button></li>
-          </ul>
+          <div class="container">
+            <h2 class="secrets-title">Explore Our Secrets</h2>
+            <div class="secrets-photos">
+              <a href="#" class="secrets-link"><img src="./images/next.png" alt="back" class="secrets-back"></a>
+              <ul class="secrets-list">
+                <li class="secrets-item">
+                  <img src="./images/rock.jpg" alt="sea" class="secrets-image" />
+                </li>
+                <li class="secrets-item">
+                  <img
+                    src="./images/kids.jpg"
+                    alt="kids playing"
+                    class="secrets-image"
+                  />
+                </li>
+                <li class="secrets-item">
+                  <img src="./images/lakes.jpg" alt="lakes" class="secrets-image" />
+                </li>
+              </ul>
+              <a href="#" class="secrets-link"><img src="./images/next.png" alt="next" class="secrets-next"></a>
+            </div>
+              <ul class="secrets-list">
+              <li><button type="button" class="secrets-button"></button></li>
+              <li><button type="button" class="secrets-button"></button></li>
+              <li><button type="button" class="secrets-button"></button></li>
+              <li><button type="button" class="secrets-button"></button></li>
+              <li><button type="button" class="secrets-button"></button></li>
+              <li><button type="button" class="secrets-button"></button></li>
+            </ul>
+          </div>
         </section>
-      </div>
-      <div class="container">
         <section class="numbers">
+          <div class="container">
           <h2 class="numbers-title">By The Numbers</h2>
           <p class="numbers-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo
-            magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Fusce commodo
+            magna et libero.Lorem ipsum <br> dolor sit amet, consectetur adipiscing
             elit.
           </p>
           <ul class="numbers-list">
             <li class="numbers-item">
               <h3 class="numbers-number">100+</h3>
               <p class="numbers-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce <br>
                 commodo magna et libero.
               </p>
             </li>
             <li class="numbers-item">
               <h3 class="numbers-number">43,000+</h3>
               <p class="numbers-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce <br>
                 commodo.
               </p>
             </li>
             <li class="numbers-item">
               <h3 class="numbers-number">30+</h3>
               <p class="numbers-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce <br>
                 commodo magna et libero.
               </p>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
+        </div>
+      </section>
         <section class="hills">
+          <div class="container">
           <h2 class="hills-title">
             Our hills and valleys are like nothing you’ve seen.
           </h2>
           <p class="hills-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
-            amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Fusce sit
+            amet magna commodo, tempus dolor <br> sit amet, laoreet elit. Donec mauris
             tortor.
           </p>
           <button type="button" class="hills-button">Learn More</button>
+        </div>
         </section>
-      </div>
-      <div class="container">
         <section class="expect">
+          <div class="container">
           <h2 class="expect-title">
             Live a life like you wouldn’t imagine, experience a <br> life you wouldn’t
             expect.
           </h2>
-          <img src="./images/crowd.png" alt="crowd" class="expect-image" />
+          <img src="./images/crowd.png" alt="crowd" class="expect-video" />
           <ul class="expect-list">
             <li class="expect-item">
               <img src="./images/desert.jpg" alt="desert" class="expect-image" />
-              <h3 class="expect-subtitle">In The Country</h3>
-              <p class="expect-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                dapibus mauris in lectus tempus.
-              </p>
+              <div class="expect-describes">
+                <h3 class="expect-subtitle">In The Country</h3>
+                <p class="expect-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                  dapibus mauris in lectus tempus.
+                </p>
+              </div>
             </li>
             <li class="expect-item">
               <img src="./images/city.jpg" alt="city" class="expect-image" />
-              <h3 class="expect-subtitle">In The City</h3>
-              <p class="expect-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                dapibus mauris in.
-              </p>
+              <div class="expect-describes">
+                <h3 class="expect-subtitle">In The City</h3>
+                <p class="expect-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                  dapibus mauris in.
+                </p>
+              </div>
             </li>
           </ul>
+        </div>
         </section>
-      </div>
-      <div class="container">
         <section class="gallery">
+          <div class="container">
           <h2 class="gallery-title">Photo Gallery</h2>
           <p class="gallery-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -266,10 +277,10 @@
               <img src="./images/fog.png" alt="fog" class="gallery-image" />
             </li>
           </ul>
+        </div>
         </section>
-      </div>
-      <div class="container">
         <section class="getting">
+          <div class="container">
           <h2 class="getting-title">Getting there</h2>
           <ul class="getting-list">
             <li class="getting-item">
@@ -291,11 +302,11 @@
               <p class="getting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
             </li>
           </ul>
+        </div>
         </section>
-      </div>
     </main>
-    <div class="container">
       <footer class="footer">
+        <div class="container">
           <img src="./images/logo-flower.png" alt="logo" class="footer-image">
           <h2 class="footer-logo"><span class="footer-explore">Explore</span><br>Indonesia</h2>
           <ul class="footer-list">
@@ -316,7 +327,7 @@
           <img src="" alt="in" class="footer-image">
           <img src="" alt="google" class="footer-image">
           <p class="footer-copyright">Copyright © 2019</p>
-      </footer>
-    </div>
+        </div>
+        </footer>
   </body>
 </html>

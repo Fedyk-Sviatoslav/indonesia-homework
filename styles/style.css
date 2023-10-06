@@ -1,9 +1,9 @@
 .container {
-    width: 1770;
+    width: 1670;
     padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right: 15px; 
+     margin-left: auto;
+    margin-right: auto; 
 }
 
 :root {
@@ -19,29 +19,16 @@
 
 .header {
     background-color: brown;
+}
+
+.header-flexbox {
     display: flex;
 }
 
 .header-image {
+    display: block;
     padding-top: 28px;
 }
-
-.header-list:first-child {
-    display: flex;
-    flex-direction: row;
-    gap: 64px;
-    padding-top: 48px;
-    margin-left: 64px;
-}
-
-.header-list {
-    display: flex;
-    padding-top: 38px;
-    gap: 40px;
-    margin-left: 843px;
-    padding-right: 141px;
-}
-
 
 .header-logo {
     color: var(--text-white);
@@ -52,6 +39,19 @@ line-height: 80.5%;
 letter-spacing: 0.315px;
 text-transform: uppercase;
 padding-top: 40px;
+margin-right: 64px;
+}
+
+.header-list {
+    display:  flex;
+    flex-direction: row;
+    gap: 65px;
+    padding-top: 48px;
+}
+
+.header-list:last-child {
+    margin-left: auto;
+    gap: 40px;
 }
 
 .header-item {
@@ -67,6 +67,17 @@ text-transform: uppercase;
     background-color: brown;
 }
 
+.explore-list {
+    display: flex;
+    margin-top: 241px;
+    padding: 41px 71px 49px 71px;
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.explore-left {
+    padding-left: 137px;
+}
 
 .explore-title {
     color: var(--text-white);
@@ -76,8 +87,7 @@ font-style: normal;
 font-weight: 900;
 line-height: 130px;
 text-transform: uppercase;
-padding-left: 204px;
-margin-top: 195px;
+padding-top: 195px;
 }
 
 .explore-button {
@@ -92,29 +102,11 @@ border-radius: 211px;
 background: var(--accent-red);
 padding: 20px 64px 20px 64px;
 border: none;
-width: 271px;
-padding-left: 268px;
-margin-top: 21px;
 }
 
 .explore-flex {
     display: flex;
-    justify-content: end;
-}
-
-.explore-list {
-    display: flex;
-    margin-top: 282px;
-    gap: 198px;
-    padding: 40px 128px 50px 71px;
-    background-color: var(--black);
-}
-
-.explore-image {
-    width: 417.217px;
-height: 254px;
-display: block;
-margin-top: 197px;
+    justify-content: flex-end;
 }
 
 .explore-number {
@@ -146,25 +138,42 @@ letter-spacing: 0.5px;
 width: 210px;
 }
 
-.about {
-    background-color: var(--dark-blue-background);
+.explore-image {
+    width: 417.217px;
+height: 254px;
+display: flex;
+margin-top: 197px;
+
 }
 
-.about-list {
-    display: flex;
-    flex-direction: column;
+.about {
+    background-color: var(--dark-blue-background);
+    padding-top: 207px;
+    padding-bottom: 305px;
 }
 
 .about-item {
     display: flex;
 }
 
-.about-item:last-child {
-    flex-direction: row-reverse;
+.about-walkways {
+    margin-left: 131px;
+    padding-top: 58px;
 }
 
-.about-texts {
-    flex-direction: column;
+.about-item:last-child {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.about-beaches {
+    margin-top: 260px;
+    margin-right: 125px;
+}
+
+#about-image {
+    margin-top: 192px;
+    display: block;
 }
 
 .about-title {
@@ -173,6 +182,7 @@ font-family: DM Sans;
 font-size: 42px;
 font-weight: 700;
 line-height: 50px;
+margin-bottom: 4px;
 }
 
 .about-text {
@@ -182,6 +192,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 28px;
 letter-spacing: 0.18px;
+margin-bottom: 32px;
 }
 
 .about-button {
@@ -198,6 +209,46 @@ letter-spacing: 0.18px;
     border: none;
 }
 
+.secrets {
+    padding-top: 127px;
+    padding-bottom: 886px;
+}
+
+.secrets-list, .secrets-photos {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    margin-top: 45px;
+    margin-bottom: 28px;
+}
+
+.secrets-list:last-child {
+    gap: 22px;
+}
+
+.secrets-image {
+    width: 355px;
+height: 227px;
+flex-shrink: 0;
+}
+
+.secrets-link {
+    margin-top: 161px;
+}
+
+.secrets-back {
+    transform: rotate(180deg);
+}
+
+.secrets-title {
+    color: var(--dark-blue-background);
+    font-family: DM Sans;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .secrets-button {
     border-radius: 50%;
     background: var(--secrets-buttons);
@@ -206,12 +257,15 @@ letter-spacing: 0.18px;
     height: 19px;
 }
 
+
 .secrets-button:hover {
     background-color: var(--accent-red);
 }
 
 .numbers {
     background-color: var(--dark-blue-background);
+    padding-top: 201px;
+    padding-bottom: 225px;
 }
 
 .numbers-title {
@@ -220,6 +274,16 @@ letter-spacing: 0.18px;
     font-size: 60px;
     font-weight: 700;
     line-height: 1.5;
+    text-align: center;
+}
+
+.numbers-list {
+    display: flex;
+    margin-top: 39px;
+}
+
+.numbers-item {
+    flex-direction: column;
 }
 
 .numbers-text {
@@ -229,6 +293,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 28px;
 letter-spacing: 0.5px;
+text-align: center;
 }
 
 .numbers-number {
@@ -238,6 +303,15 @@ font-size: 42.137px;
 font-weight: 700;
 line-height: 49.16px;
 letter-spacing: 0.386px;
+text-align: center;
+}
+
+.hills {
+    padding-top: 249px;
+    padding-bottom: 256px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .hills-title {
@@ -255,6 +329,8 @@ font-size: 18px;
 font-weight: 400;
 line-height: 28px; 
 letter-spacing: 0.5px;
+margin-top: 32px;
+margin-bottom: 36px;
 }
 
 .hills-button {
@@ -273,6 +349,8 @@ letter-spacing: 0.5px;
 
 .expect {
     background-color: grey;
+    padding-top: 141px;
+    padding-bottom: 255px;
 }
 
 .expect-title {
@@ -281,6 +359,29 @@ font-family: DM Sans;
 font-size: 42px;
 font-weight: 700;
 line-height: 50px;
+margin-bottom: 118px;
+text-align: center;
+}
+
+.expect-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expect-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 125px;
+    gap: 75px;
+}
+
+.expect-item {
+    display: flex;
+}
+
+.expect-describes {
+    margin-left: 42px;
 }
 
 .expect-subtitle {
@@ -290,6 +391,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 1.5;
+margin-bottom: 15px;
 }
 
 .expect-text {
@@ -302,12 +404,24 @@ line-height: 28px;
 letter-spacing: 0.5px;
 }
 
+.gallery {
+    margin-top: 177px;
+    margin-bottom: 229px;
+}
+
+/* .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+
 .gallery-title {
     color: var(--black);
 font-family: DM Sans;
 font-size: 60px;
 font-weight: 700;
 line-height: 1.5;
+text-align: center;
 }
 
 .gallery-text {
@@ -317,6 +431,8 @@ font-size: 18px;
 font-weight: 400;
 line-height: 28px; 
 letter-spacing: 0.18px;
+text-align: center;
+margin-bottom: 42px;
 }
 
 .getting {
