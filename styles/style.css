@@ -1,3 +1,11 @@
+.container {
+    width: 1770;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 :root {
     --accent-red: #DD2242;
     --text-white: #FFF;
@@ -11,7 +19,29 @@
 
 .header {
     background-color: brown;
+    display: flex;
 }
+
+.header-image {
+    padding-top: 28px;
+}
+
+.header-list:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding-top: 48px;
+    margin-left: 64px;
+}
+
+.header-list {
+    display: flex;
+    padding-top: 38px;
+    gap: 40px;
+    margin-left: 843px;
+    padding-right: 141px;
+}
+
 
 .header-logo {
     color: var(--text-white);
@@ -21,6 +51,7 @@ font-weight: 900;
 line-height: 80.5%;
 letter-spacing: 0.315px;
 text-transform: uppercase;
+padding-top: 40px;
 }
 
 .header-item {
@@ -36,6 +67,7 @@ text-transform: uppercase;
     background-color: brown;
 }
 
+
 .explore-title {
     color: var(--text-white);
 font-family: Roboto;
@@ -44,6 +76,8 @@ font-style: normal;
 font-weight: 900;
 line-height: 130px;
 text-transform: uppercase;
+padding-left: 204px;
+margin-top: 195px;
 }
 
 .explore-button {
@@ -58,6 +92,29 @@ border-radius: 211px;
 background: var(--accent-red);
 padding: 20px 64px 20px 64px;
 border: none;
+width: 271px;
+padding-left: 268px;
+margin-top: 21px;
+}
+
+.explore-flex {
+    display: flex;
+    justify-content: end;
+}
+
+.explore-list {
+    display: flex;
+    margin-top: 282px;
+    gap: 198px;
+    padding: 40px 128px 50px 71px;
+    background-color: var(--black);
+}
+
+.explore-image {
+    width: 417.217px;
+height: 254px;
+display: block;
+margin-top: 197px;
 }
 
 .explore-number {
@@ -86,10 +143,28 @@ font-style: normal;
 font-weight: 400;
 line-height: 28px; 
 letter-spacing: 0.5px;
+width: 210px;
 }
 
 .about {
     background-color: var(--dark-blue-background);
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-item {
+    display: flex;
+}
+
+.about-item:last-child {
+    flex-direction: row-reverse;
+}
+
+.about-texts {
+    flex-direction: column;
 }
 
 .about-title {
